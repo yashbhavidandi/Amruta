@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap" rel="stylesheet">
+
+    <style>
+      #password-gate {
+        text-align: center;
+        padding: 2rem;
+        font-family: Arial, sans-serif;
+      }
+      #error {
+        color: red;
+        margin-top: 1rem;
+      }
+      #content {
+        display: none;
+        
+      }
+    </style>
+
+</head>
+<body>
+
+  <div id="password-gate">
+    <h2>Please enter password to continue</h2>
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="checkPassword()">Submit</button>
+    <p id="error"></p>
+  </div>
+    
+  <div id="content">
+    <main>
+     <div class="bigContainer">
+        <img class="garland" src="./photos/output-onlinepngtools.png" alt="">
+        <div class="container">
+            <img class="us" src="Screenshot_20251211-133537_WhatsApp.jpg" width="100%" height="20%">
+            
+            <h1>Merry Christmas My Gwapa Prinsesa!</h1>
+        </div>
+        
+        <img class="sideGarland" src="./photos/tree.svg">
+        <img class="sideGarland2" src="./photos/tree.svg">
+        <img class ="bulb1"src="./photos/bulb.png" width="50px" height="60px"alt="">
+        <img class ="bulb2"src="./photos/bulb.png" width="50px" height="60px"alt="">
+        <img class ="bulb3"src="./photos/bulb.png" width="50px" height="60px"alt="">
+        <img class ="bulb4"src="./photos/bulb.png" width="50px" height="60px"alt="">
+        <img class ="bulb5"src="./photos/bulb.png" width="50px" height="60px"alt="">
+
+        <img class="flower1" src="./photos/pink-tulip-bouquet-m.svg" alt="">
+        <div class="buttonBox">
+            <audio controls src="Amrutahehe.mp3" type="audio/aac"></audio>
+        </div>
+        
+        <div class="talkingBox">
+            <h2>To my ammuu</h2>
+            <p>Merry Christmas to my entire world, I love you so much my cutie pie ammu 
+                you mean everything to me and to share another beautiful Christmas with you 
+                means more to me than you'll ever know my love. together we can face anything life brings our way!
+            </p>
+
+            <p>The greatest gift that God ever gave me after giving of himself, was to bring you and me together baby. 
+                I feel like the luckiest man in the world because I am blessed to spend every day with you my sunshine my 
+                pretty pretty baby. I'll never take for granted every moment you and I share baby, every day is beautiful in 
+                my eyes, being with you, walking by your side, feeling every moment of life with you from the heart makes life 
+                lovely to me baby. No matter what, the greatest gift that the god could ever give me on earth , no 
+                matter what life brings my way, is you. We have each other baby, I LOVE YOU SO MUCH MY BEAUTIFUL WIFEY!! MERRY
+                CHRISTMAS MY BABY ammmuuu..!!!
+            </p>
+        </div>
+     </div>
+    </main>
+</div>
+    <script>
+    const correctPassword = "amruta4ever"; // CHANGE this to your password
+
+    function checkPassword() {
+      const input = document.getElementById("password").value;
+      const error = document.getElementById("error");
+      const content = document.getElementById("content");
+      const gate = document.getElementById("password-gate");
+
+      if (input === correctPassword) {
+        error.textContent = "";
+        gate.style.display = "none";
+        content.style.display = "block";
+      } else {
+        error.textContent = "Incorrect password. Try again.";
+      }
+    }
+  </script>    
+
+
+</body>
+</html>etElementById("error");
+      const content = document.getElementById("content");
+      const gate = document.getElementById("password-gate");
+
+      if (input === correctPassword) {
+        error.textContent = "";
+        gate.style.display = "none";
+        content.style.display = "block";
+      } else {
+        error.textContent = "Incorrect password. Try again.";
+      }
+    }
+  </script>    
+
+
+</body>
+</html>l>>

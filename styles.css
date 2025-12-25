@@ -1,0 +1,203 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+body{
+    
+    background-image: url(./photos/christmas-plug-in-nightlight.png);
+    background-repeat: no-repeat;   
+  background-size: cover;         
+  background-position: center;   
+  background-attachment: fixed; 
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigContainer{
+    width: 80%;
+}
+
+.garland{
+    width: 80%;
+    position: absolute;
+    z-index: 1;
+    height: 15%;
+    top: -10px;
+    
+}
+
+.container{
+    border: 2px solid black;
+    border-radius: 10%;
+    height: 500px;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.us{
+    height: 100%;
+    border-radius: 10%;
+}
+
+.container h1{
+    text-align: center;
+    background-color: transparent;
+    font-family: "Cedarville Cursive", cursive;
+    position: absolute;
+    z-index: 1;
+    width: 75%;
+    top: 385px;
+    color:white;
+    text-shadow: 
+       2px 2px 4px rgba(0,0,0,0.7),   /* bottom-right shadow */
+      -2px 2px 4px rgba(0,0,0,0.7),   /* bottom-left shadow */
+       2px -2px 4px rgba(0,0,0,0.7),  /* top-right shadow */
+      -2px -2px 4px rgba(0,0,0,0.7);
+}
+
+.sideGarland{
+    position: absolute;
+    rotate: 230deg;
+    width: 75%;
+    left: -120px;
+    top: 0;
+    
+}
+
+.sideGarland2{
+    position: absolute;
+    rotate: 230deg;
+    width: 75%;
+    left: -120px;
+    top: 300px;
+    
+}
+
+
+.talkingBox{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.talkingBox h2{
+    font-family: "Give You Glory";
+    font-weight: 700;
+}
+
+.talkingBox p{
+    font-family: "Give You Glory";
+    font-weight: 700;
+}
+
+.bulb1{
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    left: 10;
+}
+
+.bulb2{
+    position: absolute;
+    z-index: 2;
+    top: 150px;
+    left: 20px;
+}
+
+.bulb3{
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    left: 60px;
+}
+
+.bulb4{
+    position: absolute;
+    z-index: 2;
+    top: 295px;
+    left: 10px;
+}
+
+.bulb5{
+    position: absolute;
+    z-index: 2;
+    top: 375px;
+    left: 55px;
+}
+
+.flower1{
+    width: 100px;
+    height: 125px;
+    position: absolute;
+    right: 0px;
+    top: 390px;
+}
+
+.buttonBox{
+    display: flex;
+    justify-content: center;
+}
+
+
+
